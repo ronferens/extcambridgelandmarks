@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Absolute camera pose estimation">
+    <meta name="keywords" content="Camera, localization, pose estimation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extended Cambridge Landmarks Dataset</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar" role="navigation" aria-label="main navigation">-->
+<!--    <div class="navbar-brand">-->
+<!--        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">-->
+<!--            <span aria-hidden="true"></span>-->
+<!--            <span aria-hidden="true"></span>-->
+<!--            <span aria-hidden="true"></span>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="navbar-menu">-->
+<!--        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">-->
+<!--            <a class="navbar-item" href="https://ronferens.github.io/">-->
+<!--      <span class="icon">-->
+<!--          <i class="fas fa-home"></i>-->
+<!--      </span>-->
+<!--            </a>-->
+
+<!--            <div class="navbar-item has-dropdown is-hoverable">-->
+<!--                <a class="navbar-link">-->
+<!--                    More Research-->
+<!--                </a>-->
+<!--                <div class="navbar-dropdown">-->
+<!--                    <a class="navbar-item" href="https://ronferens.github.io/multi-scene-pose-transformer/">-->
+<!--                        MSTransformer-->
+<!--                    </a>-->
+<!--                    <a class="navbar-item" href="https://ronferens.github.io/c2f-ms-transformer/">-->
+<!--                        C2F-MSTransformer-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</nav>-->
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Extended Cambridge Landmarks Dataset</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ronferens.github.io/">Ron Ferens</a>,</span>
+                        <span class="author-block">
+              <a href="https://yosikeller.github.io">Prof. Yosi Keller</a>
+            </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Bar-Ilan University</span>
+                    </div>
+
+                    <!--                    <div class="column has-text-centered">-->
+                    <!--                        <div class="publication-links">-->
+                    <!--                            &lt;!&ndash; PDF Link. &ndash;&gt;-->
+                    <!--                            <span class="link-block">-->
+                    <!--                <a href=https://arxiv.org/pdf/2103.11477.pdf-->
+                    <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                    <!--                  <span class="icon">-->
+                    <!--                      <i class="fas fa-file-pdf"></i>-->
+                    <!--                  </span>-->
+                    <!--                  <span>Paper</span>-->
+                    <!--                </a>-->
+                    <!--              </span>-->
+                    <!--                            &lt;!&ndash; arXiv Link. &ndash;&gt;-->
+                    <!--                            <span class="link-block">-->
+                    <!--                <a href="https://arxiv.org/abs/2103.11477"-->
+                    <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                    <!--                  <span class="icon">-->
+                    <!--                      <i class="ai ai-arxiv"></i>-->
+                    <!--                  </span>-->
+                    <!--                  <span>arXiv</span>-->
+                    <!--                </a>-->
+                    </span>
+                    <!-- Code Link. -->
+                    <span class="link-block">
+                <a href="https://github.com/ronferens/extcambridgelandmarks"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<img src="./static/images/ecl_teaser.png" alt="teaser" width="400" height="800" class="center">
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        In this work we propose ``HyperPose'' an approach for using hypernetworks in absolute camera
+                        pose regressors. The inherent appearance variations in natural scenes, due to environmental
+                        conditions, perspective, and lighting, induce a notable domain disparity between the training
+                        and test datasets, degrading the precision of contemporary localization networks. To mitigate
+                        this, we advocate incorporating hypernetworks into both single-scene and multiscene camera pose
+                        regression models. During the inference phase, the hypernetwork dynamically computes adaptive
+                        weights for the localization regression heads based on the input image, effectively narrowing
+                        the domain gap. We evaluate the HyperPose methodology across multiple established absolute pose
+                        regression architectures using indoor and outdoor datasets. In particular, we introduce and
+                        share the Extended Cambridge Landmarks (ECL), that is a novel localization dataset, based on the
+                        Cambridge Landmarks dataset, showing it in multiple seasons with significantly varying
+                        appearance conditions. Our empirical experiments demonstrate that HyperPose yields notable
+                        performance enhancements, for both single- and multi-scene architectures. We have made our
+                        source code, pre-trained models, and ECL dataset openly available.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div id="videoal">
+                <div class="video">
+                    <video autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/kingscollege_ecl.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="author-block">Kings College</h2>
+                </div>
+                <div class="video">
+                    <video autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/kingscollege_ecl.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="author-block">Old Hospital</h2>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div id="videoal">
+                <div class="video">
+                    <video autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/kingscollege_ecl.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="author-block">Shop Facade</h2>
+                </div>
+                <div class="video">
+                    <video autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/kingscollege_ecl.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="author-block">St. Marys Church</h2>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{shavit2021paying,
+          title={Paying attention to activation maps in camera pose regression. In arxiv preprint},
+          author={Shavit, Yoli and Ferens, Ron and Keller, Yosi},
+          journal={arXiv preprint arxiv:2103.11477},
+          year={2021}
+        }</code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <!--    <div class="container">-->
+    <!--        <div class="content has-text-centered">-->
+    <!--            <a class="icon-link"-->
+    <!--               href="https://arxiv.org/abs/2103.11477">-->
+    <!--                <i class="fas fa-file-pdf"></i>-->
+    <!--            </a>-->
+    <!--            <a class="icon-link" href="https://github.com/ronferens" class="external-link" disabled>-->
+    <!--                <i class="fab fa-github"></i>-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <div class="content">
+                <p>
+                    This website is licensed under a <a rel="license"
+                                                        href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+                <p>
+                    This means you are free to borrow the <a
+                        href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                    we just ask that you link back to this page in the footer.
+                    Please remember to remove the analytics code included in the header of the website which
+                    you do not want on your website.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
