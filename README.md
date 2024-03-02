@@ -1,6 +1,6 @@
 # Extended Cambridge Landmarks Dataset
 
-The official Extended Cambridge Landmarks (ECL) dataset, based on the [Cambridge Landmarks dataset]("https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3")
+The official Extended Cambridge Landmarks (ECL) dataset, based on the [Cambridge Landmarks dataset](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3)
 Our new extended dataset, showing the original scenes in multiple seasons with significantly varying appearance
 conditions.<br>
 For each scene we have generated three flavors: <i>Evening, Winter</i> and <i>Summer</i>.
