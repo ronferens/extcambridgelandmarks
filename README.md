@@ -1,9 +1,15 @@
 # Extended Cambridge Landmarks Dataset
 
-The official Extended Cambridge Landmarks (ECL) dataset, based on the [Cambridge Landmarks dataset](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3)
-Our new extended dataset, showing the original scenes in multiple seasons with significantly varying appearance
-conditions.<br>
-For each scene we have generated three flavors: <i>Evening, Winter</i> and <i>Summer</i>.
+ We introduce the Extended Cambridge Landmarks (ECL) dataset, which builds upon the foundation of the original [Cambridge Landmarks dataset](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3). Our ECL dataset enhances the existing test scenes by incorporating diverse appearance conditions.
+For each scene, we crafted three distinct flavors: *Evening*, *Winter*, and *Summer*.
+ 
+As part of our commitment to the research community, we are excited to share both our data generation process and the refined code that underpins this valuableresource.
+
+
+This data set was introduced in our work [Hypernetwork-Infused Camera Pose Localization and an Extended Cambridge Landmarks Dataset](https://arxiv.org/abs/2303.02610) for improving pose estimation accuracy in varying domains.
+
+![plot](./static/images/ecl_teaser.png?raw=true "Title")
+ 
 
 # Using the Data
 * All extended scenes can be downloaded from this [link](https://drive.google.com/drive/folders/1aM5BBg_UwCgJuBwFXYBg5_Y09kBOSln2).
