@@ -6,7 +6,7 @@ For each scene, we crafted three distinct flavors: *Evening*, *Winter*, and *Sum
 As part of our commitment to the research community, we are excited to share both our data generation process and the refined code that underpins this valuableresource.
 
 
-This data set was introduced in our work [Hypernetwork-Infused Camera Pose Localization and an Extended Cambridge Landmarks Dataset](https://arxiv.org/abs/2303.02610) for improving pose estimation accuracy in varying domains.
+This data set was introduced in our work [Hypernetwork-Infused Camera Pose Localization and an Extended Cambridge Landmarks Dataset](https://anonymous.4open.science/r/hyperpose-0A22) for improving pose estimation accuracy in varying domains.
 
 ![plot](./static/images/ecl_teaser.png?raw=true "Title")
  
