@@ -12,6 +12,6 @@ This data set was introduced in our work [Hypernetwork-Infused Camera Pose Local
  
 
 # Using the Data
-* All extended scenes can be downloaded from this [link](https://www.dropbox.com/scl/fi/6w16wob6x7k67eiqxwk6n/ExtendedCambridgeLandmarksDataset.zip?rlkey=gw5qktynm3nhp2hgf8f9a9l81&st=d8vd5hdw&dl=0).
+* All extended scenes can be downloaded from this [link]() - COMING SOON.
 * The <i>.csv</i> files in the <i>data</i> folder lists the test files generated in the ECL dataset.
 * Each <i>.csv</i> file refers to a specific flavor ('evening', 'winter' and 'summer') of the Cambridge Landmarks Dataset.
