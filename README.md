@@ -6,7 +6,7 @@
 Bar-Ilan University
 
 <a href="[https://arxiv.org/abs/2103.11477](https://arxiv.org/abs/2303.02610)"><img src='https://img.shields.io/badge/arXiv-HyperPose-red' alt='Paper PDF'></a>
-<a href='https://ronferens.github.io/extcambridgelandmarks/'><img src='https://img.shields.io/badge/ECL-green' alt='ECL Dataset' target="_blank"></a>
+<a href='https://ronferens.github.io/extcambridgelandmarks/'><img src='https://img.shields.io/badge/Dataset-ECL-green' alt='ECL-Dataset' target="_blank"></a>
 </div>
 
 # Extended Cambridge Landmarks Dataset
