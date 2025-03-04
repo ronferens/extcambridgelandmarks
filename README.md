@@ -9,8 +9,6 @@ Bar-Ilan University
 <a href='https://ronferens.github.io/extcambridgelandmarks/'><img src='https://img.shields.io/badge/Dataset-ECL-green' alt='ECL-Dataset' target="_blank"></a>
 </div>
 
-# Extended Cambridge Landmarks Dataset
-
  We introduce the Extended Cambridge Landmarks (ECL) dataset, which builds upon the foundation of the original [Cambridge Landmarks dataset](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3). Our ECL dataset enhances the existing test scenes by incorporating diverse appearance conditions.
 For each scene, we crafted three distinct flavors: *Evening*, *Winter*, and *Summer*.
  
